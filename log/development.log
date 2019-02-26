@@ -1601,3 +1601,14 @@ Processing by PostsController#index as HTML
   Rendered posts/_post.html.erb (0.1ms)
   Rendered posts/index.html.erb within layouts/application (4.6ms)
 Completed 200 OK in 1749ms (Views: 1747.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/" for 73.123.199.176 at 2019-02-26 19:31:25 +0000
+Cannot render console from 73.123.199.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (1.5ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.3ms)
