@@ -1587,3 +1587,17 @@ Started GET "/posts/1/body" for 73.123.199.176 at 2019-02-26 19:20:12 +0000
 Cannot render console from 73.123.199.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by PostsController#body as HTML
   Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 47ms (Views: 6.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/" for 73.123.199.176 at 2019-02-26 19:20:44 +0000
+Cannot render console from 73.123.199.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (0.2ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1749ms (Views: 1747.0ms | ActiveRecord: 0.2ms)
